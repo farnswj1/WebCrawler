@@ -1,0 +1,10 @@
+.gitignore
+.dockerignore
+.env
+Dockerfile
+__pycache__
+build
+dbs
+eggs
+logs
+project.egg-info
