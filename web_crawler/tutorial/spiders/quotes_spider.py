@@ -16,4 +16,4 @@ class QuotesSpider(Spider):
             }
 
         # If there are links to the next page, follow them
-        yield from response.follow_all(css='li.next a', callback=self.parse)      
+        yield from response.follow_all(css='li.next a', callback=self.parse)
