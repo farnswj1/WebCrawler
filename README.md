@@ -17,9 +17,7 @@ The project uses Docker. Ensure Docker and Docker Compose are installed before c
 To build, run ```docker-compose build```
 
 ## Running
-To run the web app, run ```docker-compose up -d```, then 
-go to http://localhost using your web browser.
-
-## Deploying A Project To Scrapy
-Initially, the server will not have the project in the app registered for use.
-To fix this, run ```docker exec -it web_crawler scrapyd-deploy default```.
+To run the web app, run ```docker-compose up -d```, then
+go to http://localhost using your web browser. To schedule a task,
+run ```curl http://localhost/schedule.json -d project=tutorial -d spider=quotes```
+in the terminal.
