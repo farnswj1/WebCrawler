@@ -1,7 +1,7 @@
 from scrapy import Spider, Request
 
 
-class QuotesSpider(Spider):
+class QuotesSimpleSpider(Spider):
     name = 'quotes-simple'
     start_urls = [f'https://quotes.toscrape.com/page/{page}/' for page in range(1, 11)]
 
