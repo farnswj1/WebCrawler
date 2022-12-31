@@ -3,6 +3,9 @@ FROM python:3.9-slim-bullseye
 # set environment variables
 ENV PYTHONUNBUFFERED 1
 
+# expose port(s)
+EXPOSE 6800
+
 # set directory
 WORKDIR /app
 
